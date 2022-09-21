@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>시멘틱 태그</title>
+  <style>
+  /*내부 스타일*/
+    ul{
+      background-color: beige;
+      margin: 0px;
+      border-left: 6px solid cornflowerblue;
+
+      /*태그 선택자*/
+    }
+   /*클래스 선택자*/
+   .idc1{
+    background-color: rgb(64, 116, 116);
+   }
+   
+   /*아이디 선택자*/
+   #sid2 {
+      background-color: rgb(187, 223, 224);
+   }
+   /*복합 선택자*/
+   header {
+    background-color: rgb(235, 144, 25);
+    margin: 20px 10px ;
+    /*4개(위 오른 아래 왼 시계방향) 1개(전방향) 2개(위두개아래두개)*/
+    padding: 30px;
+    width: 200px; height: 50px;
+
+   }
+
+
+  /*nav 밑에 ul찾기 id주지말고 >*/
+   nav > ul {
+    background-color: rgba(110, 179, 41, 0.808);
+  }   
+
+  /*위에꺼랑 다른게 부모자식은 한단계만 되고, 두단계 걸치려면 부등호 말고 그냥 공백*/
+  aside ul li{
+    background-color: brown;
+  }
+  
+/*속성 선택자*/
+section[id] {
+  color:darkmagenta
+}
+
+/*가상 선택자*/
+a{
+  text-decoration: none;
+  color: white; 
+}
+a:hover{
+  background-color: white; color: black;
+}
+
+a:active{
+  background-color: black; color: white;
+}
+
+/*목록에 있는 ul의 점만 없애기*/
+nav ul{
+  list-style:none;
+}
+
+  </style>
+</head>
+<body>
+ <header>
+  김민수
+</header>
+  <nav>
+    <ul>
+      <li><a href="#sid1">개인정보</a></li>
+      <li><a href="#sid2"> 학력사항</a></li>
+      <li><a href="#sid3">자격사항</a></li>
+      <li><a href="#sid4">사용가능언어</a></li>
+    </ul>
+
+  </nav>
+  <main>
+    <section id="sid1">
+      <h1>개인정보</h1>
+      <ul>
+      <li class="idc1"></li>
+      <li class="idc2"></li>
+    </ul>
+    </section>
+    <section id="sid2">
+      <h1>학력사항</h1>
+      <ul>
+      <li class="idc1"></li>
+      <li class="idc2"></li>
+    </ul>
+    </section>
+    <section id="sid3">
+      <h1>자격사항</h1>
+      <ul>
+      <li class="idc1"></li>
+      <li class="idc2"></li>
+    </ul>
+    </section>
+    <section id="sid4">
+      <h1>사용가능언어</h1>
+      <ul>
+      <li class="idc1"></li>
+      <li class="idc2"></li>
+    </ul>
+    </section>
+    
+    
+  </main>
+    <aside>
+      <footer>
+      <h1>참고사이트</h1>
+        <ul>
+          <li class="idca1">K디지털 아카데미</li>
+          
+        </ul>
+    </aside>
+    
+      
+
+      </footer>
+
+  
+</body>
+</html>
