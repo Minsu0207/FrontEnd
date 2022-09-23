@@ -4,10 +4,11 @@
   text-decoration-line: none;
   margin:0px;
   padding:0px;
-  
-  
+  font-family: 'Dongle', sans-serif;
+  font-family: 'Gowun Dodum', sans-serif;
   font-family: 'Gugi', cursive;
-
+  font-family: 'Yeon Sung', cursive;
+  
 }
 
 /*레이아웃*/
@@ -44,6 +45,7 @@ nav > ul {
 }
 
 header{
+
   background-color: #E6F4F1;
   
 }
