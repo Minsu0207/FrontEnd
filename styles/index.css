@@ -13,12 +13,15 @@
 
 /*레이아웃*/
 nav {
+  list-style-type: none;
   text-decoration-line: none; color: white;
   background-color: #887FCD;
   padding: 10px;
   display: flex;
   justify-content:space-between; color: white;
   height: 20px;
+  top  : 0;
+  position: sticky;
 }
 
 nav a {
@@ -45,23 +48,28 @@ nav > ul {
 }
 
 header{
-
+  
   background-color: #E6F4F1;
   
 }
 header>section{
-  display: flex;
-}
+  display: flex ;
+  }
 .header_left, .header_right {
-  margin: 20px;
+  margin: 10px;
+  
 }
 
 .header_left{
   width: 30%;
+  text-align: center;
+  font-size: 20px;
+  
 }
 
 .header_right{
-  width: 70%;
+width : 70%;
+
 }
 
 main{
@@ -84,9 +92,31 @@ footer{
  background-color: #887FCD; 
  justify-content: space-between;
  color: rgba(232, 207, 248, 0.801);
-
+ bottom: 0;
+ position: sticky;
 }
 
 footer>ul{
   list-style: none;
+}
+
+
+@media only screen and (max-width:600px){
+  
+  header_liff{
+    align-items: center;
+  }
+
+  header>section{
+    flex-direction: column;
+        align-items: center;
+    width: 100%;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+
 }
